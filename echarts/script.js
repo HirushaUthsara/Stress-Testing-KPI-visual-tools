@@ -8,7 +8,7 @@ var date = [];
 
 var data = [Math.random() * 300];
 // - 7000000
-for (var i = 1; i < 1000000; i++) {
+for (var i = 1; i < 5000000; i++) {
     var now = new Date(base += oneDay);
     date.push([now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/'));
     data.push(Math.round((Math.random() - 0.5) * 20 + data[i - 1]));
@@ -28,7 +28,7 @@ var option = {
     },
     title: {
         left: 'center',
-        text: 'Large Area Chart',
+        text: 'Line Chart',
     },
     toolbox: {
         feature: {
@@ -71,7 +71,7 @@ var option = {
             type:'line',
             smooth:true,
             symbol: 'none',
-            sampling: 'average',
+            // sampling: 'average',
             itemStyle: {
                 color: 'rgb(255, 70, 131)'
             },
